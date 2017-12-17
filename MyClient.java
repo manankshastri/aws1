@@ -7,7 +7,7 @@ public class MyClient {
         BufferedReader in = null;
         int ip;
         try {//Keep this number. For the pace server this is the number we must use.
-            ip = 22; //("vulcan.seidenberg.pace.edu");
+            ip = 4040; //("vulcan.seidenberg.pace.edu");
             //InetAddress host = InetAddress.getByName( "54.211.11.43");
             InetAddress host = InetAddress.getByName( "172.31.32.158");
             clientSocket = new Socket(host, ip);
