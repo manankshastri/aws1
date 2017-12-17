@@ -8,8 +8,8 @@ public class MyClient {
         int ip;
         try {//Keep this number. For the pace server this is the number we must use.
             ip = 4040; //("vulcan.seidenberg.pace.edu");
-            //InetAddress host = InetAddress.getByName( "54.211.11.43");
-            InetAddress host = InetAddress.getByName( "172.31.32.158");
+            //InetAddress host = InetAddress.getByName( "localhost");
+            InetAddress host = InetAddress.getByName( "ec2-13-59-220-157.us-east-2.compute.amazonaws.com");
             clientSocket = new Socket(host, ip);
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             String s = in.readLine();
